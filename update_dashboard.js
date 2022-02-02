@@ -10,7 +10,7 @@ exports.handler = function(event, context, callback) {
         "annotations": {
             "vertical": [
                 {
-                    "label": `${headCommit}`,
+                    "label": `${headCommit} deployed to production`,
                     "value": `${deployFinishTime}`,
                     "color": "#67bd92",
                     "visible": true
@@ -20,7 +20,7 @@ exports.handler = function(event, context, callback) {
     };
     if (newSchemas){
         let newSchemaVertical = {
-            "label": `New Schema(s): ${newSchemas} in ${headCommit}`,
+            "label": `New Schema(s): ${newSchemas} in ${headCommit} deployed to production`,
             "value": `${deployFinishTime}`,
             "color": "#bd9367",
             "visible": true
