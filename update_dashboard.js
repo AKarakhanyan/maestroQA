@@ -42,7 +42,7 @@ exports.handler = function(event, context, callback) {
     console.log(dashboard);
 
     //Find and Modify Widget we want annotations added to
-    const widget = dashboard.DashboardBody.widgets.find(w => w.properties.title === "MyBucketName bytes"); //this will find the widget in array where properties.title == title of widget we want
+    const widget = dashboard.DashboardBody.widgets.find(w => w.properties.title === `${widgetEnv}`); //this will find the widget in array where properties.title == title of widget we want
     if (!widget){throw `Widget with title ${widgetEnv} not found`}
     widget.properties.annotations = annotation.annotations;
     
