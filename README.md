@@ -160,4 +160,4 @@ Environment variables for that script could be set within a Context or Project s
 Environment variables for the lambda can be set in a terraform config 
 
 Flow Diagram
-[]
+[Flow](Flow.drawio.png)
